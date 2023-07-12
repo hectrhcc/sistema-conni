@@ -7,7 +7,6 @@
 body{
 	color:#FFE4C4;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-  overflow:hidden ; 
 }
 img{/*imagen del logo de Inspirate centrada*/
     display: block;
@@ -52,9 +51,9 @@ h3{
     font-size: 16px;
     color: #fff;
     border-radius: 50px;
-    border: none;
-    padding: 15px 50px;
-    margin: 13px;
+    border: 1px solid black;
+    padding: 10px 45px;
+    margin: 7px;
     cursor: pointer;
     background-color: #87CEEB;
     transition: all 0.3s ease;
@@ -123,4 +122,5 @@ h3{
 
  #seccion-principal{
   overflow:auto;
+  height: 80vh;
  }
