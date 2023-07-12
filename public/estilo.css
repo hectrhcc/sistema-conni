@@ -41,6 +41,23 @@ h3{
     align-items: center;
   }
   
+  .button-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid blue;
+    padding: 10px 45px;
+    margin: 7px;
+    cursor: pointer;
+    background-color: #87CEEB;
+    transition: all 0.3s ease;
+  }
   
   .button-container a:hover {
     background-color: #4682B4;
