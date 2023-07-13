@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const app = express();
 // middleware para manejar datos del formulario
@@ -24,7 +26,8 @@ const sql = createPool({
     host:'us-cdbr-east-06.cleardb.net',
     user:'be5fde0c8f67e5',
     password:'df360b64',
-    database:'heroku_b2de14395b88296'
+    database:'heroku_b2de14395b88296',
+    timezone: 'America/Santiago' // zona horaria
 })
 
     async function insertarDatos(actividad, direccion, comuna, fecha, res) {
