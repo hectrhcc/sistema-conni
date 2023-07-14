@@ -14,49 +14,48 @@
   <body>
     <h2>Agenda Semanal</h2><br/>
     <br/>
-    <form action="url_del_servidor" method="POST">
+    <form action="https://proyecto-inzpirate.vercel.app/agregar-semana" method="POST">
         <div>
           <label for="persona" >Integrante:</label>
-          <select id="persona">
-            <option value="conniecardenas">Connie Cárdenas</option>
-            <option value="nancysalazar">Nancy Salazar</option>
-            <option value="gracielamamani">Graciela Mamani</option>
-            <option value="jaquelinefrugonne">Jaqueline Frugonne</option>
-            <option value="macarenamonrroy">Macarena Monrroy</option>
-            <option value="andresgalleguillos">Andrés Galleguillos</option>
-            <option value="hectorcontreras">Héctor Contreras</option>
-            <option value="albertoramos">Alberto Ramos</option>
-            <option value="florangelvargas">Florangel Vargas</option>
+          <select id="persona" name="persona">
+            <option value="Connie Cardenas">Connie Cárdenas</option>
+            <option value="Nancy Salazar">Nancy Salazar</option>
+            <option value="Graciela Mamani">Graciela Mamani</option>
+            <option value="Jaqueline Frugonne">Jaqueline Frugonne</option>
+            <option value="Macarena Monrroy">Macarena Monrroy</option>
+            <option value="Andres Galleguillos">Andrés Galleguillos</option>
+            <option value="Hector Contreras">Héctor Contreras</option>
+            <option value="Alberto Ramos">Alberto Ramos</option>
+            <option value="Florangel Vargas">Florangel Vargas</option>
           </select>      
           <br/>
           <label for="tarea" >Tarea:</label>
-          <input type="text" value="" id="tarea" name="actividad" placeholder="Nombre de tarea">
+          <input type="text" value="" id="tarea" name="tarea" placeholder="Nombre de tarea">
         </div>
       <div ><br/>
-          <label for="startDate">Fecha Inicio:</label>
-          <input type="date" id="startDate">
+          <label for="fechainicio">Fecha Inicio:</label>
+          <input type="date" id="fechainicio" name="fechainicio">
           <br/>
-          <label for="endDate">Fecha Termino:</label>
-          <input type="date" id="endDate">
+          <label for="fechafinal">Fecha Termino:</label>
+          <input type="date" id="fechafinal" name="fechafinal">
         </div>
         <div><br>
-         <button type="button" id="tareasemanal" class="tareaSemanal">Agregar tarea</button></div>
+         <button type="submit" id="tareasemanal" class="tareaSemanal">Agregar tarea</button></div>
       </div>
     </form>
-    <table>
+    <table id="tableBody">
       <thead>
         <tr>
           <th>Integrante:</th>
           <th>Tarea:</th>
           <th>Fecha Inicio:</th>
           <th>Fecha Termino:</th>
-          <th>borrar </th>
         </tr>
       </thead>
-      <tbody id="tableBody">
+      <tbody >
       </tbody>
     </table>
-    <script src="index.js"></script><br/>
-    <div class="botones"><button onclick="saveTasks()">Guardar en un excel</button></div>
+    <script src="agendasemanal.js"></script><br/>
+    <div class="botones"><button onclick="descargarExcel()">Guardar en un excel</button></div>
 </body>
 </html>
