@@ -96,7 +96,7 @@ p {
   background-color: #00BFFF; 
   color: white;
   border: 1px solid black;
-  padding: 5px 10px;
+  padding: 5px 7px;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -106,7 +106,7 @@ p {
 }
 
 .registro{
-  width: 43%;
+  width: 33%;
   margin-top: 20px;
   text-align: center;
   background-color: #00BFFF;
