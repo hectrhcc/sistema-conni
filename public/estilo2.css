@@ -89,6 +89,22 @@ p {
     border-bottom: 1px solid black;
   }
 
+  
+.tareaMensual{
+  width: 38%;
+  text-align: center;
+  background-color: #00BFFF;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 .registro{
   width: 43%;
   margin-top: 20px;
@@ -130,21 +146,6 @@ p {
     display: block;
     margin: auto;
 }
-.tareaMensual{
-    width: 33%;
-    text-align: center;
-    background-color: #00BFFF;
-    color: white;
-    border: 1px solid black;
-    padding: 5px 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
 .botones {
   display: flex;
   justify-content: center;
