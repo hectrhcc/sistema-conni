@@ -49,8 +49,8 @@ td {
 }
 
 .agregarItem{
-    width: 7%;
-    margin-top: 5px;
+    width: 28%;
+    margin-top:auto;
     text-align: center;
     background-color: #00BFFF;
     color: white;
