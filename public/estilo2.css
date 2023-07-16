@@ -93,10 +93,10 @@ p {
 .tareaMensual{
   width: 28%;
   text-align: center;
-  background-color: #00BFFF;
+  background-color: blue; /*00BFFF*/
   color: white;
   border: 1px solid black;
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
