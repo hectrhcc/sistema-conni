@@ -54,8 +54,8 @@ td {
     text-align: center;
     background-color: #00BFFF;
     color: white;
-    border: 0.8px solid black;
-    padding:3px 10px;
+    border: 1px solid black;
+    padding:5px 10px;
     border-radius: 5px;
     cursor: pointer;
   }
