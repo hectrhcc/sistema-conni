@@ -140,8 +140,10 @@ p {
     padding: 5px 8px;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
+    display: flex;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .botones {
