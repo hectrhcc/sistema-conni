@@ -136,3 +136,38 @@ app.get('/agendames', async function(req, res) {
     res.status(500).send('Error al obtener datos');
   }
 });
+
+
+  // Agrega gastos del programa a la base de datos
+  async function insertarDatos4(item, precio, fecha, descripcion) {
+    try {
+      const result = await sql.query(`INSERT INTO gastos (nombre, precio, fecha, descripcion) VALUES (?, ?, ?, ?)`, [item, precio, fecha, descripcion]);
+      console.log(result);
+      //res.send('Datos recibidos');
+    } catch (error) {
+      console.error('Error al insertar datos:', error);
+      //res.status(500).send('Error al insertar datos');
+    }
+  }
+
+  app.post('/agregar-gastos', function(req, res) {
+    var item = req.body.item;
+    var precio = req.body.precio;
+    var fecha = req.body.fecha;
+    var descripcion = req.body.descripcion;
+    insertarDatos4(item,precio, fecha, descripcion);
+   // res.send({
+   //   success: 'Actividad agregada!'
+   // });
+  });
+
+  
+app.get('/gastos', async function(req, res) {
+  try {
+    const [rows] = await sql.query(`SELECT * FROM gastos`);
+    res.json(rows);
+  } catch (error) {
+    console.error('Error al obtener datos:', error);
+    res.status(500).send('Error al obtener datos');
+  }
+});

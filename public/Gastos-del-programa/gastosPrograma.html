@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../logo.jpg"/ rel="shortcut icon" type="image/png"/>
     <link rel="stylesheet" href="../estilo2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <title>Gastos del Programa</title>
 </head>
 <body>
 <h2>Gastos del Programa</h2>
 <br/>
-<form>
+<form action="http://127.0.0.1:3000/agregar-gastos" method="POST">
     <label for="item">Item:</label>
     <input type="text" value="" id="item" name="item" placeholder="Nombre de item">
     <br/>
     <label for="precio">Precio:</label>
-    <input type="text" value="" id="precio" name="item" placeholder="Precio de item">
+    <input type="text" value="" id="precio" name="precio" placeholder="Precio de item">
     <br/>
     <label for="fecha">Fecha:</label>
     <input type="date" id="fecha" name="fecha">
@@ -30,16 +34,20 @@
   <!--sacar la hora del sistema para cuando agregue la asistencia
     tambien sacar la fecha del dia mes y año 
 -->
-    <table>
+    <table id="tableBody">
     <thead>
       <tr>
-        <th>Listado de Items</th>
+        <th>Item</th>
+        <th>Precio</th>
+        <th>Fecha</th>
+        <th>Descripción</th>
       </tr>
     </thead>
-    <tbody id="tableBody">
+    <tbody >
     </tbody>
   </table>
+  <script src="gastosprograma.js"></script>
   <div class="botones">
-  <button onclick="saveTasks();">Guardar en excel</button></div>
+  <button onclick="descargarExcel()">Guardar en excel</button></div>
 </body>
 </html>
